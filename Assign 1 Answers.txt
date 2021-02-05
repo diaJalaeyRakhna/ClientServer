@@ -1,0 +1,69 @@
+Q1: Describe reserved ports and List down reserved ports?
+=======================================
+Reserved Ports
+=============
+Port numbers can have values in the range 0 to [(2 ** 16) - 1] (= 65535) but first 1024 (i.e. from 0 to 1023) ports are dedicated for common TCT/IP and UDP applications/services, hence called Reserved Ports. Since they are reserved, hence the client applications already know which port to access in order to access a particular service on a particular server. Port numbers above 1023 can be either Registered (1024 to 49151) or Dynamic (49152 to 65535). A short list of most common Reserved Ports is as follows:
+Port #		Service
+7		Echo
+9		Discards data at receiver
+13		Daytime (Reports time information in user-friendly format)
+17		Quite (Returns a “Quote of the Day”)
+19		Chargen (Character generator)
+53		DNS (Domain Name Service)
+67		DHCPserver
+68		DHCP client
+69		TFTP (Trivial File Transfer Protocol)
+161		SNMP (Simple Network Management Protocol)
+162		SNMP traps
+1011 : 1023		Reserved for future use
+
+
+Q2: List down pros and cons of HTTP protocol?
+===============================
+Pros of HTTP
+============
+1. HTTP offers lower CPU and memory usage due to less simultaneous connections.
+2. Chance of interception during transmission is minimized bcoz each file is downloaded from an independent connection and then gets closed.
+3. HTTP pages get stored inside page cache. When the page is re-visited, its content is loaded quickly.
+4. Handshaking is done once; at the initial connection establishment stage. Hence, latency is reduced in subsequent requests.
+5. It reports errors without closing the TCP connection.
+6. HTTP has the capability to download extensions/plugins in order to display relevant data used by an application.
+7. Its platform independent.
+8. It's not connection oriented, there's no need for network overhead to create and maintain session state and information.
+
+Cons of HTTP
+============
+1. HTTP is considered to be an insecure protocol bcoz no encryption methods are used to protect the data.
+2. If any hacker manages to intercept the request, they can view all the content (including confidential info such as username and passwords) present in the web page.
+3. Data Integrity is not there, so a hacker can not just view the content, they can easily alter the content.
+4. HTTP uses more number of system resources which leads to more power consumption. Since IoT devices contain wireless sensor networks, it is not suitable to use HTTP.
+5. Client does not close the connection even when all the data it needs have been received. Hence Server will not be available during this time period.
+6. It is not optimized for mobile.
+7. HTTP is too verbose.
+
+
+Q3: List down client devices and servers examples?
+==================================
+Clients Devices
+============
+1. Desktop PCs
+2. Laptops
+3. Smart Phones
+4. Tablets
+
+Clients Applications
+===============
+1. Browser
+2. Github Desktop app or GitHub client run on a user's terminal
+3. curl client used in command lines or scripts to transfer various types of data
+4. Smart TV requesting "Video on Demand" from PTCL's Smart server
+5. Zoom client app to create and host zoom meetings
+
+Server Examples
+=============
+1. DNS server
+2. Mail e.g. SMTP server
+3. Github Server at https://github.com/
+4. PTCL's Smart server serving different demands from smart TVs of various clients
+5. Zoom server 
+
