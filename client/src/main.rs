@@ -1,3 +1,7 @@
+// Author: Nadia Sheikh, PIAIc 52062
+// Batch 3, Q3, Islamabad
+// Pr. Scientist, PAEC
+
 use std::io::{self, Write};
 use std::error::Error;
 
