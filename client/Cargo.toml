@@ -1,0 +1,9 @@
+[package]
+name = "h2client"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+http = "0.2.3"
+h2 = "0.3.0"
+tokio = { version = "1", features = ["full"] }
